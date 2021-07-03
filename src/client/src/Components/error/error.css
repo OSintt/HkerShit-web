@@ -1,0 +1,17 @@
+@font-face {
+    font-style: normal;
+    src: url("rainyhearts.ttf");
+    font-family: Rainyhearts;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+.center-error-asd {
+    padding: .5rem;
+    color: rgb(194, 133, 3);
+    text-shadow: 0 0 1px rgb(219, 150, 0), 0 0 2px rgb(214, 141, 4), 0 0 3px rgb(221, 152, 3);
+    font-family: Rainyhearts;
+    text-align: center;
+    margin: 1rem;
+}

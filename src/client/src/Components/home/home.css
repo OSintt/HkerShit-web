@@ -1,0 +1,112 @@
+@font-face {
+    font-style: normal;
+    src: url("rainyhearts.ttf");
+    font-family: Rainyhearts;
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 104vh;
+    font-family: Helvetica, sans-serif;
+    background: #0c0c0c linear-gradient(to bottom, rgb(71, 43, 0), #000 20%);
+}   
+
+
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: rgb(88, 50, 0);
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #000;
+}
+h3 {
+    font-family: Rainyhearts;
+}
+.h2-home {
+    font-family: Rainyhearts;
+    text-shadow: 0 0 1px rgb(219, 150, 0), 0 0 2px rgb(214, 141, 4), 0 0 3px rgb(221, 152, 3);
+}
+
+.p-home {
+    font-family: Rainyhearts;
+    font-size: 1.1rem;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.logo img {
+    max-width: 220px;
+    filter: drop-shadow(0 0 10px rgb(124, 85, 2));
+    animation: logo-float 2s infinite alternate;
+}
+
+.discord a {
+    font-family: Rainyhearts, sans-serif;
+    text-decoration: inherit;
+    background-color: #fff;
+    color: #000;
+    padding: 0.30rem .5rem;
+    font-size: 2rem;
+    margin-top: 25px;
+    animation: discord-button 2s infinite;
+    transition: 0.15s all ease-in-out;
+}
+
+.discord a:hover {
+    background-color: #bababa;
+    padding: 0.45rem 1.2rem;
+}
+
+@keyframes discord-button {
+    0% {
+        box-shadow: 4px 4px 1px rgb(202, 156, 3), 4px 4px 2px rgb(202, 156, 3), 4px 4px 3px rgb(202, 156, 3), -4px -4px 1px rgb(185, 106, 3), -4px -4px 2px rgb(185, 106, 3), -4px -4px 3px rgb(185, 106, 3);
+    }
+
+    50% {
+        box-shadow: -4px -4px 1px rgb(202, 156, 3), -4px -4px 2px rgb(202, 156, 3), -4px -4px 3px rgb(202, 156, 3), 4px 4px 1px rgb(185, 106, 3), 4px 4px 2px rgb(185, 106, 3), 4px 4px 3px rgb(185, 106, 3);
+    }
+
+    100% {
+        box-shadow: 4px 4px 1px rgb(202, 156, 3), 4px 4px 2px rgb(202, 156, 3), 4px 4px 3px rgb(202, 156, 3), -4px -4px 1px rgb(185, 106, 3), -4px -4px 2px rgb(185, 106, 3), -4px -4px 3px rgb(185, 106, 3);
+    }
+}
+@keyframes logo-float{
+    from {
+        transform: translateY(-10%);
+        filter: drop-shadow(0 0 25px rgb(185, 106, 3));
+    }
+    to {
+        transform: translateY(0%);
+        filter: drop-shadow(0 0 10px rgb(185, 106, 3));
+    }
+}
+.dGen {
+    font-family: Rainyhearts;
+    color: rgb(248, 211, 0);
+    color:rgb(185, 109, 8);
+    margin-bottom: 2.5px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        min-height: 103vh;
+    }
+}
+
+@media (max-width: 330px) {
+    body {
+        min-height: 110vh;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        min-height: 112vh;
+    }
+}
